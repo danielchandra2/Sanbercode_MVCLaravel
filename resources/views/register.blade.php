@@ -7,7 +7,7 @@
 <h1>Buat Account Baru!</h1>
 <h2>Sign Up Form</h2>
 <fieldset>
-<form action="welcome.html" method="post">
+<form action="welcome" method="post">
 	<label for="fname">First name:</label><br>
 	<input type="text" name="fname" id="fname"><br>
 	<label for="lname">Last name:</label><br>
@@ -41,6 +41,7 @@
 <input type="submit" value="Submit">
 </form>
 </fieldset>
+
 
 </body>
 </html>
