@@ -17,5 +17,6 @@ Route::get('/', 'HomeController@home');
 
 
 Route::get('/register', 'AuthController@register');
+Route::post('/register', 'AuthController@register_post');
 
-Route::get('/welcome/{nama}', 'AuthController@welcome');
+Route::get('/welcome', 'AuthController@welcome'); 

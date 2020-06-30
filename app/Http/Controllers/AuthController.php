@@ -12,9 +12,16 @@ class AuthController extends Controller
    	return view('register');
    	}
 
-   	public function welcome($nama){
+   	public function register_post(request $request){
     //
-   	return view('welcome', ["nama" => $nama]);
+   	$fname=$request["fname"];
+   	$lname=$request["lname"];
+   	return view('welcome', ["fname"=>$fname , "lname"=>$lname ]);
+   	}
+
+   	public function welcome(){
+    //
+   	return view('welcome');
    	}
 
 }
