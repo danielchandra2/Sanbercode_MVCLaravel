@@ -16,12 +16,12 @@ class AuthController extends Controller
     //
    	$fname=$request["fname"];
    	$lname=$request["lname"];
-   	return view('welcome', ["fname"=>$fname , "lname"=>$lname ]);
+   	return view('welcome', compact('fname','lname'));
    	}
 
-   	public function welcome(){
-    //
-   	return view('welcome');
+   	public function welcome($fname,$lname){
+    
+   	return view('welcome', compact('fname','lname'));
    	}
 
 }
